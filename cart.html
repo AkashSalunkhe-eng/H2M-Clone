@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #top  button{
+        background-color:white;
+        border:white;
+        
+    }
+    #topright{
+        text-align:right;
+        
+    }
+    #topcenter{
+        text-align:center;
+        
+    }
+    #topnext1{
+        text-align:center;
+       
+    }
+    #topnext2{
+        text-align:center;
+        
+    }
+    #topnext3{
+        text-align:center;
+        margin:40px;
+    }
+    #topnext3 button{
+        padding:60px;
+    }
+    #centermain{
+        width:1000px;
+        display:flex;
+        margin:auto;
+    }
+    #centermain .cartitem{
+        width:700px;
+        border:1px solid black;
+
+    }
+    #centermain .paymentoption{
+        width:300px;
+        border:1px solid black;
+        
+    }
+    #c1{
+        margin:10px;
+    }
+    #c1 button{
+      width:70px;
+      height:40px;
+    }
+    #c2{
+     margin:20px
+    }
+    #c2 button{
+      width:250px;
+      height:40px;
+    }
+    #c3{
+        display:flex;
+        padding:10px;
+       
+    }
+    .c31{
+       width:200px; 
+    }
+    #c4 button{
+      width:250px;
+      height:40px;
+      margin:20px;
+      color:white;
+      background-color:black;
+    }
+    
+
+   
+  
+        
+    
+</style>
+<body>
+    <div id="top">
+       <div id="topleft">  
+        <a href="CustomerService.html"><button onclick="CustomerService">Customer Service</button></a>
+        <a href="Newsletter.html"><button onclick="Newsletter()">Newsletter</button></a>
+        <a href="Findastore.html"><button onclick="Findastore()">Find a store</button></a>
+        <a href="dottee.html"><button onclick="dottee()">...</button></a>
+       </div>
+
+       <div id="topcenter">
+        <a href="HM.html"><button onclick="HM()"style="color:red"><h1>H&M</h1></button></a>
+       </div> 
+
+       <div id="topright">
+        <a href="Signin.html"><button onclick="Signin()">Sign in</button></a>
+        <a href="Favourite.html"><button onclick="Favourite()">Favourites</button></a>
+        <a href="Shoppingbag.html"><button onclick="Shoppingbag()">Shopping bag</button></a>
+       </div>
+
+       <div id="topnext1">
+        <button onclick="Ladies()">Ladies</button>
+        <button onclick="Mens()">Mens</button>
+        <button onclick="Baby()">Baby</button>
+        <button onclick="Kids()">Kids</button>
+        <button onclick="Kids()">Divided</button>
+        <button onclick="Sale()">Sale</button>
+        <button onclick="Sustainability()">Sustainability</button>
+       </div>
+
+       <div id="topnext2">
+        <a href="HM.com.html"><button onclick="HM()">HM.com</button></a>
+        <a href="Shoppingbag.html"><button onclick="Shoppingbag()">Shoppingbag</button></a>
+       </div>
+
+       <div id="topnext3">
+        <a href="Becomeamember.html"><button onclick="bonus();customerservice();Findastore()">Become a member to get 100 bonus points</button></a>
+        <a href="Beafashion.html"><button onclick="learnmore()">Be a fashion recycler! Click to learn more.</button></a>
+        <a href="DownloadApp.html"><button onclick="downloadapp()">Download the H&M App</button></a>
+       </div>   
+    </div>
+
+    <h1 style="text-align:center">Shopping bag</h1>
+      <div id="centermain">
+        <div class="cartitem">
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="paymentoption">
+          
+          <label style="padding:10px">ADD A DISCOUNT CODE</label>
+          <div id="c1">
+          <input id="coupon" text="code"style="width:180px;height:35px"/>
+          <button onclick="add()">ADD</button>
+          </div>
+          <div id="c2">
+          <p>Log in to use your personal offers!</p>
+          <button onclick="add()">Login</button>
+          </div>
+          <div id="c3">
+            <div class="c31">
+                <p>Order value</p>
+                <p>Delivery</p>
+                <p>______________</p>
+                <p>Total</p>
+            </div>
+            <div class="c32">
+                <p>Rs.2498</p>
+                <p>Rs.148</p>
+                <p>_____________</p>
+                <p>Rs.2,747</p>
+                
+            </div>
+         </div>
+        <div id="c4">
+        <button onclick="checkout()">CONTINUE TO CHECKOUT</button>
+        </div>
+        <p style="margin:20px">We accept</p>
+        <div id="c5">
+            <div>Cash on delivery</div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+</body>
+</html>
+<script>
+     
+</script>
