@@ -1,0 +1,338 @@
+body {
+  background-color: whitesmoke;
+  font-family: "HM Sans Regular", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic";
+}
+#nav {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 151px;
+}
+
+.rightbox {
+  /* border: 1px solid red; */
+  width: 17%;
+  height: 22%;
+  margin-left: 85%;
+  position: relative;
+  top: 11%;
+  right: 3%;
+}
+.rightbox ul {
+  display: flex;
+}
+.rightbox ul li {
+  list-style-type: none;
+  margin: -3% 7% 0 0;
+}
+.rightbox ul li:nth-child(1) {
+  margin-left: 8%;
+}
+.rightbox ul li a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  height: 25%;
+  width: 3%;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+.logo img {
+  height: 100%;
+}
+
+.navigate {
+  height: 41%;
+  width: 50%;
+  /* border: 1px solid red; */
+  margin: 0% auto;
+}
+
+.navigate ul {
+  display: flex;
+}
+
+.navigate ul li:nth-child(1) {
+  margin-left: 22%;
+}
+
+.navigate li {
+  list-style-type: none;
+  margin: 1% 2%;
+}
+
+.navigate li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.search {
+  height: 11.8%;
+  width: 7%;
+  padding: 10px 15px 8px 30px;
+  border-bottom: 1px solid;
+  margin: -1.7% 0 0px 85%;
+}
+.search a img {
+  height: 20px;
+  margin-left: -29px;
+  margin-top: -4px;
+  background-color: whitesmoke;
+}
+.search input {
+  margin-top: -0.4%;
+  height: 2.5%;
+  width: 7%;
+  position: absolute;
+  margin-left: 0.5%;
+  border: 0px;
+  background-color: whitesmoke;
+}
+.box {
+  /* border: 1px solid red; */
+  width: 52%;
+  height: 21%;
+  padding: 2px 1.2%;
+  margin: 1% 23%;
+}
+.box ul {
+  display: flex;
+}
+.box ul li {
+  list-style-type: none;
+  margin: 0% 4%;
+}
+.box ul li a {
+  text-decoration: none;
+  color: black;
+}
+.imgbox1 {
+  /* border: 1px solid red; */
+  height: 640px;
+  width: 51.5%;
+  margin: auto;
+}
+.imgbox1 img {
+  width: 100%;
+  height: 100%;
+}
+.inimgbox11 {
+  /* border: 1px solid red; */
+  width: 46%;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -23%;
+}
+.inimgbox11 p:nth-child(1) {
+  margin-bottom: -4%;
+}
+.inimgbox11 p:nth-child(3) {
+  margin-top: -4%;
+}
+.inimgbox11 button {
+  width: 35%;
+  height: 45px;
+  background-color: white;
+  /* border: 1px solid red; */
+}
+.inimgbox11 button a {
+  margin: 20% 23%;
+  color: black;
+  text-decoration: none;
+}
+.midtext {
+  text-align: center;
+  margin: 15px 0;
+}
+.midbox {
+  border: 1px solid green;
+  height: 240px;
+  width: 51.9%;
+  margin: 24px auto;
+}
+.imgbox2 {
+  /* border: 1px solid red; */
+  height: 640px;
+  width: 52%;
+  margin: auto;
+}
+.imgbox2 img {
+  height: 100%;
+  width: 100%;
+}
+.inbox1 {
+  /* border: 1px solid red; */
+  width: 470px;
+  padding: 20px;
+  margin-top: -230px;
+  margin-left: 217px;
+  color: white;
+}
+.inbox1 button {
+  height: 43px;
+  background-color: white;
+  /* border: 1px solid red; */
+  /* width: 125px; */
+  margin: 0 172px;
+  border: 0px;
+}
+.inbox1 button a {
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none;
+}
+.inbox1 h1 {
+  margin: 10px 109px;
+}
+.inbox1 p {
+  margin: 9px 12px 13px 12px;
+}
+.price {
+  position: relative;
+  width: 177px;
+  bottom: 168px;
+  left: 48px;
+  font-size: 19px;
+}
+#name {
+  color: rgba(255, 255, 255);
+  margin: 2px 8px;
+}
+#price {
+  color: rgba(255, 255, 255);
+  margin: 0 9px;
+}
+.imgbox3 {
+  width: 52%;
+  height: 640px;
+  /* border: 1px solid red; */
+  margin: 1.5% auto;
+}
+.imgbox3 img {
+  height: 100%;
+  width: 100%;
+}
+.inbox2 {
+  /* border: 1px solid red; */
+  width: fit-content;
+  margin-top: -19%;
+  margin-left: 29%;
+}
+.inbox2 h3 {
+  margin: -5% 21%;
+}
+.inbox2 button {
+  height: 35px;
+  width: 26%;
+  margin: 7% 0 0 31%;
+  background-color: black;
+}
+.inbox2 button a {
+  color: white;
+  text-decoration: none;
+}
+.imgbox4 {
+  width: 52%;
+  height: 640px;
+  margin: 1.5% auto;
+}
+.imgbox4 img {
+  width: 100%;
+  height: 100%;
+}
+.inprice {
+  border: 2px solid red;
+  width: fit-content;
+  font-size: 7px;
+  color: white;
+  margin: -46% 0 0 59%;
+}
+.inprice h2 {
+  margin: 3px 0;
+}
+.innerbox {
+  color: white;
+  margin: 25% 0 0 32%;
+}
+.innerbox h1 {
+  margin: -7px 0;
+}
+.innerbox p {
+  margin: 2% 0 0 5%;
+}
+.innerbox button {
+  height: 37px;
+  width: 100px;
+  margin-left: 109px;
+  margin-top: 10px;
+}
+.innerbox button a {
+  text-decoration: none;
+  color: black;
+}
+.lastbox {
+  background-color: #f4eddd;
+  width: 100%;
+  height: 500px;
+}
+.innerbox1 {
+  /* border: 1px solid red; */
+  color: black;
+  width: 100%;
+  padding: 1% 0;
+}
+.innerbox1 h1 {
+  margin: 2% 45.3% 0px;
+}
+.innerbox1 p {
+  margin: -3px 47% 0;
+  font-size: 9px;
+}
+.innerbox1 h6 {
+  margin: 19px 46.6%;
+}
+.boxes {
+  border: 1px solid red;
+  width: 939px;
+  height: 301px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.box1 {
+  height: 299px;
+  width: 302px;
+  border: 1px solid green;
+}
+.limgbox {
+  width: 100%;
+  height: 50%;
+}
+#display {
+  width: 80%;
+  height: auto;
+  border: 2px solid green;
+  margin-left: 15%;
+  display: grid;
+  grid-template: "div div div div";
+  gap: 20px;
+}
+#display > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-heading {
+  color: red;
+}
+.productImage {
+  width: 200px;
+  height: 200px;
+}
