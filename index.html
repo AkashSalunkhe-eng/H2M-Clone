@@ -7,20 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H&M | Online Fashion, Homeware & Kids Clothes | H&M IN</title>
     <style>
-        @media only screen and (min-width: 1200px) {
+        /* @media only screen and (min-width: 1024px) { */
+            *{
+                /* margin: 0; */
+                padding: 0;
+            }
+            body {
+                background-color: whitesmoke;
+            }
             #nav {
-                border: 1px solid red;
+                /* border: 1px solid red; */
                 width: 100%;
                 height: 151px;
             }
 
             .rightbox {
                 /* border: 1px solid red; */
-                width: 251px;
-                height: 30px;
+                width: 16%;
+                height: 22%;
                 margin-left: 85%;
                 position: relative;
-                top: 7%;
+                top: 11%;
                 right: 3%;
             }
             .rightbox ul {
@@ -28,28 +35,30 @@
             }
             .rightbox ul li{
                 list-style-type: none;
-                margin: -11px 33px 0 0;
+                margin: -3% 7% 0 0;
+            }
+            .rightbox ul li:nth-child(1){
+                margin-left: 8%;
             }
             .rightbox ul li a{
                 text-decoration: none;
                 color: black
             }
             .logo {
-                height: 44px;
-                width: 68px;
+                height: 25%;
+                width: 3%;
                 /* border: 1px solid red; */
                 margin: 0 auto;
             }
-
             .logo img {
                 height: 100%;
             }
 
             .navigate {
-                height: 54px;
-                width: 978px;
+                height: 41%;
+                width: 50%;
                 /* border: 1px solid red; */
-                margin: 0 auto;
+                margin: 0% auto;
             }
 
             .navigate ul {
@@ -57,87 +66,94 @@
             }
 
             .navigate ul li:nth-child(1) {
-                margin-left: 157px;
+                margin-left: 22%;
             }
 
             .navigate li {
-                margin: 10px 20px;
                 list-style-type: none;
+                margin: 1% 2%;
             }
 
             .navigate li a {
                 color: black;
                 text-decoration: none;
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .search {
-                height: 19px;
-                width: 172px;
+                height: 11.8%;
+                width: 7%;
                 padding: 10px 15px 8px 30px;
                 border-bottom: 1px solid;
-                margin: -67px 0 0px 1180px;
+                margin: -1.7% 0 0px 85%;
             }
             .search a img{
-                height: 25px;
+                height: 20px;
                 margin-left: -29px;
                 margin-top: -4px;
+                background-color:whitesmoke
             }
             .search input{
-                margin-top: -10px;
-                height: 30px;
-                width: 174px;
+                margin-top: -0.4%;
+                height: 2.5%;
+                width: 7%;
                 position: absolute;
-                margin-left: 5px;
+                margin-left: 0.5%;
                 border: 0px;
+                background-color:whitesmoke;
             }
             .box{
-                border: 1px solid red;  
-                width : 958px;
-                height: 39.5px;
-                padding: 0 24px;
-                margin: 24px auto;
+                /* border: 1px solid red; */
+                width: 51%;
+                height: 21%;
+                padding: 0 1.2%;
+                margin: 1% 23%;
             }
             .box ul{
                 display: flex;
             }
             .box ul li{
                 list-style-type: none;
-                margin: -4px 20px;
+                margin: 0% 4%;
             }
             .box ul li a{
                 text-decoration: none;
                 color: black;
             }
             .imgbox1{
-                border: 1px solid red;
+                /* border: 1px solid red; */
                 height: 640px;
-                width:960px;
+                width: 51.5%;
                 margin: auto;
             }
+            .imgbox1 img{
+                width: 100%;
+                height: 100%;
+            }
             .inimgbox11{
-                border: 1px solid red;
-                width: 500px;
+                /* border: 1px solid red; */
+                width: 46%;
                 margin: auto;
                 color: white;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-top: -218px;
+                margin-top: -23%;
             }
             .inimgbox11 p:nth-child(1){
-                margin-bottom: -17px;
+                margin-bottom: -4%;
             }
             .inimgbox11 p:nth-child(3){
-                margin-top: -11px;
+                margin-top: -4%;
             }
             .inimgbox11 button{
-                height: 43px;
+                width: 33%;
+                height: 45px;
                 background-color: white;
                 /* border: 1px solid red; */
             }
             .inimgbox11 button a{
-                padding: 8px 12px;
+                margin: 20% 23%;
                 color: black;
                 text-decoration: none;
             }
@@ -148,17 +164,21 @@
             .midbox{
                 border: 1px solid green;
                 height: 240px;
-                width: 958px;
+                width: 51.9%;
                 margin: 24px auto;
             }
             .imgbox2{
-                border: 1px solid red;
+                /* border: 1px solid red; */
                 height: 640px;
-                width:960px;
+                width: 52%;
                 margin: auto;
             }
+            .imgbox2 img{
+                height: 100%;
+                width : 100%;
+            }
             .inbox1{
-                /* bborder: 1px solid red; */
+                /* border: 1px solid red; */
                 width: 470px;
                 padding: 20px;
                 margin-top: -230px;
@@ -199,7 +219,55 @@
                 color:rgba(255, 255, 255);
                 margin: 0 9px; 
             }
-        }
+            .imgbox3{
+                width: 52%;
+                height: 640px;
+                /* border: 1px solid red; */
+                margin: 1.5% auto;
+            }
+            .imgbox3 img{
+                height: 100%;
+                width: 100%;
+            }
+            .inbox2{
+                /* border: 1px solid red; */
+                width: fit-content;
+                margin-top: -19%;
+                margin-left: 29%;
+            }
+            .inbox2 h3{
+                margin: -5% 21%;
+            }
+            .inbox2 button{
+                height: 35px;
+                width: 26%;
+                margin: 7% 0 0 31%;
+                background-color: black;
+            }
+            .inbox2 button a{
+                color: white;
+                text-decoration: none;
+            }
+            .imgbox4{
+                width: 52%;
+                height: 640px;
+                margin: 1.5% auto
+            }
+            .imgbox4 img{
+                width: 100%;
+                height: 100%;
+            }
+            .inprice{
+                border: 2px solid red;
+                width: fit-content;
+                font-size: 7px;
+                color: white;
+                margin: -46% 0 0 59%;
+            }
+            .inprice h2{
+                margin: 3px 0;
+            }
+        /* } */
     </style>
 </head>
 
@@ -207,6 +275,7 @@
     <div id="nav">
         <div class="rightbox">
             <ul>
+                <li><a href="#">Sign in</a></li>
                 <li><a href="#">Favorite</a></li>
                 <li><a href="#">Shopping bag</a></li>
             </ul>
@@ -263,6 +332,21 @@
         <div class="price">
             <p id="name">Knitted zip-up collar</p>
             <p id="price">Rs. 1,499</p>
+        </div>
+    </div>
+    <div class="imgbox3">
+        <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/men_s04/augusti-2021/3053h/3053h-the-relaxed-jeans-3x2-teaser.jpg]&scale=size[960]&sink=format[jpeg],quality[80]" alt="">
+        <div class="inbox2">
+            <h1>September: The relaxed jeans</h1>
+            <h3>A fresh take on a '90s classic</h3>
+            <button><a href="#">SHOP NOW</a></button>
+        </div>
+    </div>
+    <div class="imgbox4">
+        <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/divided_s04/august_2021/5074b/5074B-3x2-athleisure-is-the-new-normal.jpg]&scale=size[960]&sink=format[jpeg],quality[80]" alt="">
+        <div class="inprice">
+            <h2>Ribbed sleeveless top</h2>
+            <h2>RS. 699</h2>
         </div>
     </div>
 </body>
