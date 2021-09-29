@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signup</title>
+    <style>
+      #parent {
+        width: 39%;
+        height: 1000px;
+        border: 1px solid black;
+        background-color: rgb(250, 249, 248);
+        margin: auto;
+      }
+      #member {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 15px;
+      }
+      #para {
+        text-align: center;
+        margin-top: 0px;
+        font-weight: lighter;
+        color: grey;
+      }
+      .inp {
+        margin-left: 50px;
+        width: 80%;
+        height: 50px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+
+      .lab {
+        margin-left: 50px;
+        margin-bottom: 5px;
+        color: grey;
+      }
+
+      #treat {
+        margin-left: 50px;
+        margin-top: 0px;
+        font-size: 13px;
+        color: grey;
+      }
+      #date {
+        margin-bottom: 0px;
+      }
+      #dropdown {
+        width: 77%;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        margin-left: 50px;
+        margin-top: 10px;
+        padding: 10px;
+        cursor: pointer;
+        margin-bottom: 0px;
+      }
+      #text {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      #plus_img {
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin-right: 10px;
+      }
+      #drop {
+        width: 80%;
+        height: 0px;
+        margin-left: 50px;
+        background-color: rgb(250, 249, 248);
+      }
+      #para1 {
+        margin-left: 50px;
+        width: 70%;
+        float: left;
+        margin-bottom: 0px;
+      }
+      #name {
+        margin-left: 10px;
+      }
+      #minus_img {
+        width: 20px;
+        margin-left: 35px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      #check {
+        margin-top: 0px;
+        width: 80%;
+        margin-left: 50px;
+      }
+      #para3 {
+        margin-top: -21px;
+        text-align: left;
+        margin-left: 22px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        color: gray;
+      }
+      #c_box {
+        width: 15px;
+        height: 15px;
+        margin-top: 15px;
+      }
+      #para4 {
+        text-align: left;
+        width: 70%;
+        margin-left: 70px;
+        margin-top: 20px;
+      }
+      #para5 {
+        width: 82%;
+        margin-left: 55px;
+        font-size: 15px;
+        color: grey;
+      }
+      #butt {
+        margin-left: 50px;
+        width: 80%;
+        height: 60px;
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+      }
+      #anch {
+        margin-left: 210px;
+        margin-top: 12px;
+        color: rgb(61, 50, 50);
+      }
+      #anc {
+        color: black;
+        font-size: 16px;
+      }
+      .star {
+        color: red;
+        background-color: rgb(250, 249, 248);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <h2 id="member">BECOME A MEMBER</h2>
+      <p id="para">
+        Become a member — don’t miss out on deals, offers, discounts<br />
+        and bonus vouchers.
+      </p>
+
+      <form id="myform">
+        <label class="lab">Email<mark class="star">*</mark></label
+        ><br />
+        <input type="text" id="email" class="inp" /><br />
+        <label class="lab">Create a password<mark class="star">*</mark></label
+        ><br />
+        <input type="text" id="password" class="inp" /><br />
+        <label class="lab">Date of birth<mark class="star">*</mark></label
+        ><br />
+        <input
+          type="text"
+          placeholder="DD/MM/YYYY"
+          id="date"
+          class="inp"
+        /><br />
+        <span id="treat"
+          >H&M wants to give you special treat on your birthday</span
+        >
+      </form>
+      <div id="dropdown">
+        <h3 id="text">
+          ADD MORE & GET MORE
+          <img
+            onclick="dropdown()"
+            id="plus_img"
+            src="https://cdn-icons-png.flaticon.com/512/747/747361.png"
+          />
+        </h3>
+      </div>
+      <div id="drop"></div>
+      <div id="check">
+        <input type="checkbox" id="c_box" />
+        <p id="para3">
+          Yes,email me offers,styles,updates and special invites<br />
+          to sales and events
+        </p>
+      </div>
+      <div id="para4">
+        Wish your inbox was more stylish? No problem, just subscribe to our
+        newsletter. Find out what's hot and happening in the world of fashion,
+        beauty, and home decor. Plus, you'll get bonus vouchers, birthday
+        offers, and special invites to sales and events – straight to your
+        inbox!
+      </div>
+      <div id="para5">
+        <p>
+          By clicking ‘Become a member’, I agree to the H&M Membership Terms and
+          conditions.
+        </p>
+        <p>
+          To give you the full membership experience, we will process your
+          personal data in accordance with the H&M''s Privacy Notice.
+        </p>
+      </div>
+      <div id="sub">
+        <button id="butt">BECOME A MEMBER</button>
+      </div>
+      <div id="anch">
+        <a href=""><p id="anc">Back to sign in</p></a>
+      </div>
+    </div>
+  </body>
+  <script>
+    function dropdown() {
+      var parent = document.getElementById("parent");
+      parent.style.height = "1500px";
+      var plus = document.getElementById("plus_img");
+      var text = document.getElementById("text");
+      text.style.color = "red";
+      var div = document.getElementById("drop");
+      div.style.backgroundColor = "white";
+      div.style.height = "500px";
+
+      var para = document.createElement("p");
+      para.id = "para1";
+      para.textContent =
+        "Did you know that if you add some more information below you will earn more points and get a more personalized experience?How great is that? ";
+      var minus_img = document.createElement("img");
+      minus_img.src = "https://cdn-icons-png.flaticon.com/128/860/860821.png";
+      minus_img.id = "minus_img";
+      minus_img.style.backgroundColor = "red";
+      minus_img.style.height = "3px";
+
+      minus_img.onclick = function () {
+        removediv();
+      };
+      var form = document.createElement("form");
+      var label1 = document.createElement("label");
+      label1.className = "lab";
+      label1.textContent = "First Name";
+
+      var input1 = document.createElement("input");
+      input1.className = "inp";
+      input1.type = "text";
+
+      var label2 = document.createElement("label");
+      label2.className = "lab";
+      label2.textContent = "Last Name";
+
+      var input2 = document.createElement("input");
+      input2.className = "inp";
+      input2.type = "text";
+
+      var label3 = document.createElement("label");
+      label3.className = "lab";
+      label3.textContent = "Gender";
+
+      var gen_drop = document.createElement("select");
+      gen_drop.className = "inp";
+
+      var opt1 = document.createElement("option");
+      opt1.textContent = "Select a gender";
+
+      var opt2 = document.createElement("option");
+      opt2.textContent = "Male";
+
+      var opt3 = document.createElement("option");
+      opt3.textContent = "Female";
+
+      var label4 = document.createElement("label");
+      label4.className = "lab";
+      label4.textContent = "Pin Code";
+
+      var input3 = document.createElement("input");
+      input3.className = "inp";
+
+      gen_drop.append(opt1, opt2, opt3);
+
+      form.append(label1, input1, label2, input2, label3);
+
+      div.append(para, minus_img, form, gen_drop, label4, input3);
+    }
+
+    function removeallchild(parent) {
+      while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+      }
+    }
+    function removediv() {
+      const container = document.querySelector("#drop");
+      removeallchild(container);
+
+      var text = document.getElementById("text");
+      text.style.color = "black";
+
+      var div = document.getElementById("drop");
+      div.style.backgroundColor = "rgb(250, 249, 248)";
+      div.style.height = "0px";
+
+      var parent = document.getElementById("parent");
+      parent.style.height = "1000px";
+    }
+  </script>
+</html>
