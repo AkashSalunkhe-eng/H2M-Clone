@@ -1,7 +1,10 @@
 body {
-  background-color: whitesmoke;
+  background-color: #faf9f8;
   font-family: "HM Sans Regular", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic";
+    "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック",
+    "MS PGothic", sans-serif;
+  font-weight: 400;
+  background-color: #faf9f8;
 }
 #nav {
   /* border: 1px solid red; */
@@ -316,11 +319,12 @@ body {
 #display {
   width: 80%;
   height: auto;
-  border: 2px solid green;
-  margin-left: 15%;
+  /* border: 2px solid green; */
+  /* margin-left: 20%; */
   display: grid;
   grid-template: "div div div div";
-  gap: 20px;
+  gap: 5px;
+  float: right;
 }
 #display > div {
   display: flex;
@@ -333,6 +337,59 @@ body {
   color: red;
 }
 .productImage {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 500px;
+}
+h4 a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+h4 a:hover {
+  color: #e5002e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.leftside {
+  max-width: 19%;
+  min-width: 19%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftside .newArrival h4 {
+  line-height: 0%;
+}
+.leftside .newArrival ul li {
+  line-height: 170%;
+}
+
+.leftside .newArrival ul li a {
+  color: black;
+  font-size: 13px;
+  line-height: 24px;
+}
+.leftside .newArrival ul li a:hover {
+  color: #e5002e;
+  background-color: transparent;
+  text-decoration: none;
+}
+.newArrival h4 {
+  margin-left: 40px;
+}
+.newArrival ul {
+  margin-top: -1px;
+}
+.newArrival ul li {
+  list-style: none;
+}
+.newArrival ul li a {
+  text-decoration: none;
+}
+a:hover {
+  color: #e5002e;
+  background-color: transparent;
+  text-decoration: none;
 }
