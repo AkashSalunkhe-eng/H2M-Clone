@@ -5,7 +5,7 @@
     <style>
       #parent {
         width: 39%;
-        height: 1200px;
+        height: 1000px;
         border: 1px solid black;
         background-color: rgb(250, 249, 248);
         margin: auto;
@@ -135,6 +135,10 @@
         color: black;
         font-size: 16px;
       }
+      .star {
+        color: red;
+        background-color: rgb(250, 249, 248);
+      }
     </style>
   </head>
   <body>
@@ -146,11 +150,14 @@
       </p>
 
       <form id="myform">
-        <label class="lab">Email*</label><br />
+        <label class="lab">Email<mark class="star">*</mark></label
+        ><br />
         <input type="text" id="email" class="inp" /><br />
-        <label class="lab">Create a password*</label><br />
+        <label class="lab">Create a password<mark class="star">*</mark></label
+        ><br />
         <input type="text" id="password" class="inp" /><br />
-        <label class="lab">Date of birth*</label><br />
+        <label class="lab">Date of birth<mark class="star">*</mark></label
+        ><br />
         <input
           type="text"
           placeholder="DD/MM/YYYY"
@@ -206,6 +213,8 @@
   </body>
   <script>
     function dropdown() {
+      var parent = document.getElementById("parent");
+      parent.style.height = "1500px";
       var plus = document.getElementById("plus_img");
       var text = document.getElementById("text");
       text.style.color = "red";
@@ -288,6 +297,9 @@
       var div = document.getElementById("drop");
       div.style.backgroundColor = "rgb(250, 249, 248)";
       div.style.height = "0px";
+
+      var parent = document.getElementById("parent");
+      parent.style.height = "1000px";
     }
   </script>
 </html>
