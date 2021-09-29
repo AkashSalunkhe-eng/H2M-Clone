@@ -339,22 +339,96 @@
                 font-size: 15px;
             }
             .footer{
-                height: 550px;
+                height: 414px;
                 width: 94%;
                 background-color: #E4E4E4;
                 padding: 3%;
             }
             .details{
                 height: 250px;
-                width: 960px;
-                border: 1px solid black;
+                width: 894px;
+                /* border: 1px solid black; */
                 margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
             }
             .icons{
                 width: 960px;
                 height: 25px;
                 border: 1px solid black;
-                margin: 10px auto;
+                margin: -50px auto;
+            }
+            .first{
+                height: 190px;
+                width: 150px;
+                /* border: 1px solid black; */
+            }
+            .first li {
+                list-style-type: none;
+                margin: 12px -37px;
+            }
+            .first h6{
+                margin: 2px 2px;
+            }
+            .first li a {
+                text-decoration: none;
+                color: black;
+                font-size: 13px;
+            } 
+            .second{
+                /* border: 1px solid black; */
+                width: 226px;
+                height: 214px;
+            }
+            .second li {
+                list-style-type: none;
+                margin: 11px -35px;
+                font-size: 12px;
+            }
+            .second h6 {
+                margin: 2px 5px
+            }
+            .second li a {
+                text-decoration: none;
+                color: black;
+            }
+            .third{
+                /* border: 1px solid black; */
+                width: 226px;
+                height: 214px;
+            }
+            .third h6 {
+                margin: 2px 5px
+            }
+            .third li {
+                list-style-type: none;
+                margin: 17px -35px;
+                font-size: 12px;
+            }
+            .third li a {
+                text-decoration: none;
+                color: black;
+            }
+            .forth{
+                height: 230px;
+                width: 228px;
+                /* border: 1px solid black; */
+            }
+            .forth p:nth-child(1){
+                margin: 1px 6px 21px;
+                font-size: 13px;
+                font-weight: 600;
+            }
+            .forth p:nth-child(2){
+                font-size: 13px;
+                margin: 20px 5px;
+                line-height: 16px;
+            }
+            .forth a{
+                margin-left: 5px;
+                font-size: 11px;
+                color: black;
+                text-decoration: none;
             }
         /* } */
     </style>
@@ -483,7 +557,43 @@
         </div>
     </div>
     <div class="footer">
-        <div class="details"></div>
+        <div class="details">
+            <div class="first">
+                <h6>SHOP</h6>
+                <ul>
+                    <li><a href="#">Ladies</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </div>
+            <div class="second">
+                <h6>CORPORATE INFO</h6>
+                <ul>
+                    <li>Career at H&M</li>
+                    <li>About H&M Group</li>
+                    <li>Sustainability</li>
+                    <li>Press</li>
+                    <li>Invester relations</li>
+                    <li>Corporate goverance</li>
+                </ul>
+            </div>
+            <div class="third">
+                <h6>HELP</h6>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>       
+                    <li><a href="#">My H&M</a></li>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Legal & Privacy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="forth">
+                <p>Signup and newslater</p>
+                <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!</p>
+                <a href="#">SIGN UP &rarr;</a>
+            </div>
+        </div>
         <div class="icons"></div>
     </div>
 </body>

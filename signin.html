@@ -29,7 +29,7 @@
         margin-left: 60px;
         margin-bottom: 20px;
         margin-top: 10px;
-        color: rgb(97, 96, 96);
+        color: rgb(82, 45, 45);
       }
       .inp {
         margin-left: 60px;
@@ -38,11 +38,13 @@
         margin-bottom: 5px;
         margin-top: 8px;
         border: 1px solid rgb(208, 208, 208);
+        font-size: 16px;
+        padding: 5px;
       }
       #checkbox {
         float: left;
         margin-left: 60px;
-        margin-top: 25px;
+        margin-top: 30px;
         margin-right: 8px;
       }
       #text {
@@ -80,6 +82,10 @@
         color: rgb(97, 96, 96);
         cursor: pointer;
       }
+      .star {
+        background-color: white;
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -90,10 +96,10 @@
         Become a member — don’t miss out on deals, offers, discounts<br />
         and bonus vouchers.
       </p>
-      <form>
-        <label class="lab">Email*</label>
+      <form id="myform">
+        <label class="lab">Email<mark class="star">*</mark></label>
         <input type="text" id="email" class="inp" />
-        <label class="lab">Password*</label>
+        <label class="lab">Password<mark class="star">*</mark></label>
         <input type="password" id="password" class="inp" />
       </form>
       <input type="checkbox" id="checkbox" />
@@ -101,7 +107,12 @@
       <p id="FP" onmouseover="underline()" onmouseout="rmund()">
         Forgot Password?
       </p>
-      <button id="butt" onmouseover="fade()" onmouseout="fadeover()">
+      <button
+        id="butt"
+        onmouseover="fade()"
+        onmouseout="fadeover()"
+        onclick="submit()"
+      >
         SIGN IN
       </button>
       <button id="butt2" onmouseover="fade1()" onmouseout="fadeover1()">
@@ -147,6 +158,32 @@
     function remund1() {
       var text = document.getElementById("text1");
       text.style.textDecoration = "";
+    }
+
+    function submit() {
+      let myform = document.getElementById("myform");
+
+      let email = myform.email.value;
+      myform.email.value = "";
+
+      let password = myform.password.value;
+      myform.password.value = "";
+
+      // grab and prepare user data
+
+      let all_members = JSON.parse(localStorage.getItem("normaldetails"));
+      let user_not_found;
+      all_members.forEach((user) => {
+        if (email === user.email && password === user.password) {
+          user_not_found = false;
+          window.location.href = "index.html";
+        } else {
+          user_not_found = true;
+        }
+      });
+      if (user_not_found) {
+        window.location.href = "signup.html";
+      }
     }
   </script>
 </html>
