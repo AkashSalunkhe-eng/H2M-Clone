@@ -9,7 +9,6 @@ async function fetchProductDetails() {
 
   let data = allproducts.clothing;
   showProduct(data);
-  handleSorting(data);
 }
 fetchProductDetails();
 
