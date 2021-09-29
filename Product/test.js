@@ -1,14 +1,21 @@
 let div = document.getElementById("display");
 
-async function showProduct() {
+async function fetchProductDetails() {
   let response = await fetch("./product.json");
 
   let allproducts = await response.json();
 
   console.log(allproducts);
+
   let data = allproducts.clothing;
+  showProduct(data);
+  handleSorting(data);
+}
+fetchProductDetails();
+
+function showProduct(data) {
   data.forEach(function (item) {
-    console.log(item);
+    // console.log(item);
 
     let divison = document.createElement("div");
     // heading.textContent = item.title
@@ -25,7 +32,10 @@ async function showProduct() {
 
     let anchor = document.createElement("p");
     anchor.addEventListener("click", function () {
-      window.location.assign("https://www.flipkart.com/");
+      //console.log(item.id);
+      items(item.id);
+      window.location.assign("./card.html");
+      // window.location.assign("https://www.flipkart.com/");
     });
     anchor.textContent = item.title;
 
@@ -37,5 +47,3 @@ async function showProduct() {
     div.append(divison);
   });
 }
-
-showProduct();
