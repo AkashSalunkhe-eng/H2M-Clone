@@ -43,7 +43,7 @@
         display:flex;
         margin:auto;
     }
-    #centermain .products{
+    #centermain #products{
         width:700px;
         border:1px solid black;
 
@@ -98,10 +98,11 @@
     }
     #top1 ul li{
       list-style-type: none;
+      cursor: pointer;
     }
-#succ{
-    text-align:center;
-}
+    #succ{
+      text-align:center;
+    }
 
     
 
@@ -133,15 +134,15 @@
        <div id="topnext1">
         <button onmouseover="Ladies()" onmouseout="Ladiesout()" id="lady">Ladies</button>
         
-        <button onmouseenter="Mens()" onmouseout="Mensout()">Mens</button>
+        <button onmouseenter="Mens()" onmouseout="Mensout()" id="mens">Mens</button>
         
-        <button onmouseenter="Baby()" onmouseout="babyout()">Baby</button>
-        <button onmouseenter="Kids()" onmouseout="kidsout()">Kids</button>
-        <button onmouseenter="Divide()" onmouseout="divideout()">Divided</button>
-        <button onmouseenter="Sale()" onmouseout="saleout()">Sale</button>
-        <button onmouseenter="Sustainability()" onmouseout="sustainout()">Sustainability</button>
+        <button onmouseenter="Baby()" onmouseout="babyout()" id="baby">Baby</button>
+        <button onmouseenter="Kids()" onmouseout="kidsout()" id="kids">Kids</button>
+        <button onmouseenter="Divide()" onmouseout="divideout()" id="divide">Divided</button>
+        <button onmouseenter="Sale()" onmouseout="saleout()" id="sale">Sale</button>
+        <button onmouseenter="Sustainability()" onmouseout="sustainout()" id="sustain">Sustainability</button>
        </div>
-       <div id="top1"></div>
+       <div id="top1" onmouseover="stay()" onmouseleave="leave()"></div>
        
        <div id="topnext2">
         <a href="HM.com.html"><button onclick="HM()">HM.com</button></a>
@@ -157,7 +158,7 @@
 
     <h1 style="text-align:center">Shopping bag</h1>
       <div id="centermain">
-        <div class="products">
+        <div id="products">
             
         </div>
 
@@ -179,7 +180,7 @@
           <input id="coupon" text="code" style="width:180px;height:35px"/>
           <button onclick="add()">ADD</button>
           </div>
-         <div id="succ"></div>
+          <div id="succ"></div>
           <div id="c2">
           <p>Log in to use your personal offers!</p>
           <button onclick="add()">Login</button>
@@ -221,6 +222,10 @@
 </html>
 <script>
  function Ladies(){
+
+  var lady = document.getElementById("lady");
+  lady.style.textDecoration="underline"
+  lady.style.cursor="pointer"
      var div = document.getElementById("top1");
      div.style.width = "1000px";
      
@@ -342,7 +347,9 @@
      ul2.append(d,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25);
      ul3.append(e,c1,c2,c3,c4,c5,c6,c7,c8);
      div.append(ul1,ul2,ul3);
-
+  function stay() {
+    div.append(ul1,ul2,ul3);
+  }
 
      
 
@@ -356,15 +363,25 @@
     }
 
     function Ladiesout(){
-        const container = document.querySelector("#top1");
-      removeallchild(container);
+       var lady = document.getElementById("lady");
+  lady.style.textDecoration=""
     }
+      function leave() {
+         const container = document.querySelector("#top1");
+      removeallchild(container);
+      }
+       
+     
      
     //  11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
      
  function Mens(){
      var div = document.getElementById("top1");
      div.style.width = "1000px";
+
+     var mens = document.getElementById("mens")
+      mens.style.textDecoration="underline"
+  mens.style.cursor="pointer"
      
      var a=document.createElement("h4");
      a.textContent="New Arrivals";
@@ -484,7 +501,9 @@
      ul2.append(d,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25);
      ul3.append(e,c1,c2,c3,c4,c5,c6,c7,c8);
      div.append(ul1,ul2,ul3);
-
+  function stay() {
+    div.append(ul1,ul2,ul3);
+  }
 
      
 
@@ -497,16 +516,23 @@
       }
     }
 
-    function Mensout(){
-        const container = document.querySelector("#top1");
+          function leave() {
+         const container = document.querySelector("#top1");
       removeallchild(container);
+      }
+          function Mensout(){
+       var mens = document.getElementById("mens");
+        mens.style.textDecoration=""
     }
-     
     // 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
     
     function Baby(){
      var div = document.getElementById("top1");
      div.style.width = "1000px";
+
+      var baby = document.getElementById("baby")
+      baby.style.textDecoration="underline"
+      baby.style.cursor="pointer"
      
      var a=document.createElement("h4");
      a.textContent="New Arrivals";
@@ -627,6 +653,10 @@
      ul3.append(e,c1,c2,c3,c4,c5,c6,c7,c8);
      div.append(ul1,ul2,ul3);
 
+     function stay() {
+       div.append(ul1,ul2,ul3);
+     }
+
 
      
 
@@ -639,16 +669,23 @@
       }
     }
 
-    function babyout(){
+    function leave(){
         const container = document.querySelector("#top1");
       removeallchild(container);
     }
-    
+     function babyout(){
+       var baby = document.getElementById("baby");
+        baby.style.textDecoration=""
+    }
     // 3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
 
     function Kids(){
      var div = document.getElementById("top1");
      div.style.width = "1000px";
+
+           var kids = document.getElementById("kids")
+      kids.style.textDecoration="underline"
+      kids.style.cursor="pointer"
      
      var a=document.createElement("h4");
      a.textContent="Girls";
@@ -787,6 +824,10 @@
      ul4.append(z,z1,z2,z3,z4,z5,z6,z7);
      div.append(ul1,ul4,ul2,ul3);
 
+     function stay() {
+       div.append(ul1,ul4,ul2,ul3);
+     }
+
 
      
 
@@ -799,15 +840,24 @@
       }
     }
 
-    function kidsout(){
+
+    function leave(){
         const container = document.querySelector("#top1");
       removeallchild(container);
+    }
+
+         function kidsout(){
+       var kids = document.getElementById("kids");
+        kids.style.textDecoration=""
     }
     // 444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
     function Divide(){
      var div = document.getElementById("top1");
      div.style.width = "1000px";
      
+                var divide = document.getElementById("divide")
+      divide.style.textDecoration="underline"
+      divide.style.cursor="pointer"
      var a=document.createElement("h4");
      a.textContent="New Arrivals";
      var ul1 =document.createElement("ul");
@@ -927,6 +977,11 @@
      ul3.append(e,c1,c2,c3,c4,c5,c6,c7,c8);
      div.append(ul1,ul2,ul3);
 
+     function stay() {
+     div.append(ul1,ul2,ul3);
+       
+     }
+
 
      
 
@@ -939,14 +994,23 @@
       }
     }
 
-    function divideout(){
+    function leave(){
         const container = document.querySelector("#top1");
       removeallchild(container);
+    }
+      function divideout(){
+       var divide = document.getElementById("divide");
+        divide.style.textDecoration=""
     }
     // 55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
     function Sale(){
      var div = document.getElementById("top1");
      div.style.width = "1000px";
+
+
+      var sale = document.getElementById("sale")
+      sale.style.textDecoration="underline"
+      sale.style.cursor="pointer"
      
      var a=document.createElement("h4");
      a.textContent="New Arrivals";
@@ -1066,7 +1130,10 @@
      ul2.append(d,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25);
      ul3.append(e,c1,c2,c3,c4,c5,c6,c7,c8);
      div.append(ul1,ul2,ul3);
-
+      function stay() {
+     div.append(ul1,ul2,ul3);
+        
+      }
 
      
 
@@ -1079,14 +1146,22 @@
       }
     }
 
-    function saleout(){
+    function leave(){
         const container = document.querySelector("#top1");
       removeallchild(container);
+    }
+          function saleout(){
+       var sale = document.getElementById("sale");
+        sale.style.textDecoration=""
     }
     // 6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
     function Sustainability(){
      var div = document.getElementById("top1");
      div.style.width = "1000px";
+
+      var sustain = document.getElementById("sustain")
+      sustain.style.textDecoration="underline"
+      sustain.style.cursor="pointer"
      
      var a=document.createElement("h4");
      a.textContent="New Arrivals";
@@ -1225,7 +1300,10 @@
      ul4.append(z,z1,z2,z3,z4,z5,z6,z7)
      div.append(ul1,ul4,ul2,ul3);
 
-
+function stay() {
+     div.append(ul1,ul4,ul2,ul3);
+  
+}
      
 
     
@@ -1237,9 +1315,14 @@
       }
     }
 
-    function sustainout(){
+    function leave(){
         const container = document.querySelector("#top1");
       removeallchild(container);
+    }
+
+              function sustainout(){
+       var sustain = document.getElementById("sustain");
+        sustain.style.textDecoration=""
     }
     // 77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
 
@@ -1260,33 +1343,29 @@ document.getElementById("total").textContent="Rs."+ e;//////////////////////////
 
 
 function add(){
-var div =document.getElementById("succ");
-div.style.width = "300px";
-
-
-
-
-
-var b = "ABCDEFGHIJ";
-var a = document.getElementById("coupon").value;
-var m = document.createElement("p");
-var n = document.createElement("p");
-if(a==b){
-  alert("CouponCode Applied Successfully")
-m.textContent = "Coupon code applied!";
-m.style.color = "green";
-div.append(m);
-}else{
-  alert("Invalid Code")
-n.textContent = "Invalid coupon Code!";
-n.style.color = "red";
-
-div.append(n);
-
-}
-
+  var a = document.getElementById("coupon").value;
+  var b = "ABC";
+  var succ =document.getElementById("succ");
+  succ.width = "300px";
   
 
+  var m = document.createElement("p");
+  m.textContent = "Coupon Code Applied!10%OFF";
+  m.style.color = "green";
+  var n = document.createElement("p");
+  n.textContent = "Invalid Coupon Code!";
+  n.style.color = "red";
+
+
+  if(a==b){
+    alert("Coupon Code Applied Successfully");
+    succ.append(m);
+  }else{
+    alert("Invalid Coupon Code");
+    succ.append(n);
+  }
+  
+  
 }
 
 
