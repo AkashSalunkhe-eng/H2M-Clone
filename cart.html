@@ -100,7 +100,9 @@
       list-style-type: none;
       cursor: pointer;
     }
-
+    #succ{
+      text-align:center;
+    }
 
     
 
@@ -178,6 +180,7 @@
           <input id="coupon" text="code" style="width:180px;height:35px"/>
           <button onclick="add()">ADD</button>
           </div>
+          <div id="succ"></div>
           <div id="c2">
           <p>Log in to use your personal offers!</p>
           <button onclick="add()">Login</button>
@@ -519,7 +522,7 @@
       }
           function Mensout(){
        var mens = document.getElementById("mens");
-  mens.style.textDecoration=""
+        mens.style.textDecoration=""
     }
     // 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
     
@@ -1336,8 +1339,32 @@ var e=148 + c;
 
 document.getElementById("total").textContent="Rs."+ e;///////////////////////////////////////////////////////////////////////////
 
+
+
+
 function add(){
-  var a = document.getElementById("coupon");
+  var a = document.getElementById("coupon").value;
+  var b = "ABC";
+  var succ =document.getElementById("succ");
+  succ.width = "300px";
+  
+
+  var m = document.createElement("p");
+  m.textContent = "Coupon Code Applied!10%OFF";
+  m.style.color = "green";
+  var n = document.createElement("p");
+  n.textContent = "Invalid Coupon Code!";
+  n.style.color = "red";
+
+
+  if(a==b){
+    alert("Coupon Code Applied Successfully");
+    succ.append(m);
+  }else{
+    alert("Invalid Coupon Code");
+    succ.append(n);
+  }
+  
   
 }
 
