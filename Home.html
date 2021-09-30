@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M | Online Fashion, Homeware & Kids Clothes | H&M IN</title>
+    <style>
+        /* @media only screen and (min-width: 1024px) { */
+            
+            body {
+                background-color: whitesmoke;
+            }
+            #nav {
+                /* border: 1px solid red; */
+                width: 100%;
+                height: 151px;
+            }
+
+            .rightbox {
+                /* border: 1px solid red; */
+                width: 17%;
+                height: 22%;
+                margin-left: 85%;
+                position: relative;
+                top: 11%;
+                right: 3%;
+            }
+            .rightbox ul {
+                display: flex;
+            }
+            .rightbox ul li{
+                list-style-type: none;
+                margin: -3% 7% 0 0;
+            }
+            .rightbox ul li:nth-child(1){
+                margin-left: 8%;
+            }
+            .rightbox ul li a{
+                text-decoration: none;
+                color: black
+            }
+            .logo {
+                height: 25%;
+                width: 3%;
+                /* border: 1px solid red; */
+                margin: 0 auto;
+            }
+            .logo img {
+                height: 100%;
+            }
+
+            .navigate {
+                height: 41%;
+                width: 50%;
+                /* border: 1px solid red; */
+                margin: 0% auto;
+            }
+
+            .navigate ul {
+                display: flex;
+            }
+
+            .navigate ul li:nth-child(1) {
+                margin-left: 22%;
+            }
+
+            .navigate li {
+                list-style-type: none;
+                margin: 1% 2%;
+            }
+
+            .navigate li a {
+                color: black;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+            .search {
+                height: 11.8%;
+                width: 7%;
+                padding: 10px 15px 8px 30px;
+                border-bottom: 1px solid;
+                margin: -1.7% 0 0px 85%;
+            }
+            .search a img{
+                height: 20px;
+                margin-left: -29px;
+                margin-top: -4px;
+                background-color:whitesmoke
+            }
+            .search input{
+                margin-top: -0.4%;
+                height: 2.5%;
+                width: 7%;
+                position: absolute;
+                margin-left: 0.5%;
+                border: 0px;
+                background-color:whitesmoke;
+            }
+            .box{
+                /* border: 1px solid red; */
+                width: 52%;
+                height: 21%;
+                padding: 2px 1.2%;
+                margin: 1% 23%;
+            }
+            .box ul{
+                display: flex;
+            }
+            .box ul li{
+                list-style-type: none;
+                margin: 0% 4%;
+            }
+            .box ul li a{
+                text-decoration: none;
+                color: black;
+            }
+            .imgbox1{
+                /* border: 1px solid red; */
+                height: 640px;
+                width: 51.5%;
+                margin: auto;
+            }
+            .imgbox1 img{
+                width: 100%;
+                height: 100%;
+            }
+            .inimgbox11{
+                /* border: 1px solid red; */
+                width: 46%;
+                margin: auto;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: -23%;
+            }
+            .inimgbox11 p:nth-child(1){
+                margin-bottom: -4%;
+            }
+            .inimgbox11 p:nth-child(3){
+                margin-top: -4%;
+            }
+            .inimgbox11 button{
+                width: 35%;
+                height: 45px;
+                background-color: white;
+                /* border: 1px solid red; */
+            }
+            .inimgbox11 button a{
+                margin: 20% 23%;
+                color: black;
+                text-decoration: none;
+            }
+            .midtext{
+                text-align: center;
+                margin: 15px 0;
+            }
+            .midbox{
+                border: 1px solid green;
+                height: 240px;
+                width: 51.9%;
+                margin: 24px auto;
+            }
+            .imgbox2{
+                /* border: 1px solid red; */
+                height: 640px;
+                width: 52%;
+                margin: auto;
+            }
+            .imgbox2 img{
+                height: 100%;
+                width : 100%;
+            }
+            .inbox1{
+                /* border: 1px solid red; */
+                width: 470px;
+                padding: 20px;
+                margin-top: -230px;
+                margin-left: 217px;
+                color: white;
+            }
+            .inbox1 button{
+                height: 43px;
+                background-color: white;
+                /* border: 1px solid red; */
+                /* width: 125px; */
+                margin: 0 172px;
+                border : 0px
+            }
+            .inbox1 button a{
+                padding: 8px 12px;
+                color: black;
+                text-decoration: none;
+            }
+            .inbox1 h1{
+                margin: 10px 109px;
+            }
+            .inbox1 p{
+                margin: 9px 12px 13px 12px;
+            }
+            .price{
+                position: relative;
+                width: 177px;
+                bottom: 168px;
+                left: 48px;
+                font-size: 19px;
+            }
+            #name{
+                color:rgba(255, 255, 255);
+                margin: 2px 8px;
+            }
+            #price{
+                color:rgba(255, 255, 255);
+                margin: 0 9px; 
+            }
+            .imgbox3{
+                width: 52%;
+                height: 640px;
+                /* border: 1px solid red; */
+                margin: 1.5% auto;
+            }
+            .imgbox3 img{
+                height: 100%;
+                width: 100%;
+            }
+            .inbox2{
+                /* border: 1px solid red; */
+                width: fit-content;
+                margin-top: -19%;
+                margin-left: 29%;
+            }
+            .inbox2 h3{
+                margin: -5% 21%;
+            }
+            .inbox2 button{
+                height: 35px;
+                width: 26%;
+                margin: 7% 0 0 31%;
+                background-color: black;
+            }
+            .inbox2 button a{
+                color: white;
+                text-decoration: none;
+            }
+            .imgbox4{
+                width: 52%;
+                height: 640px;
+                margin: 1.5% auto;
+            }
+            .imgbox4 img{
+                width: 100%;
+                height: 100%;
+            }
+            .inprice{
+                border: 2px solid red;
+                width: fit-content;
+                font-size: 7px;
+                color: white;
+                margin: -46% 0 0 59%;
+            }
+            .inprice h2{
+                margin: 3px 0;
+            }
+            .innerbox{
+                color: white;
+                margin: 25% 0 0 32%;
+            }
+            .innerbox h1{
+                margin: -7px 0;
+            }
+            .innerbox p{
+                margin:2% 0 0 5%;
+            }
+            .innerbox button{
+                height: 37px;
+                width: 100px;
+                margin-left: 109px;
+                margin-top: 10px;
+            }
+            .innerbox button a{
+                text-decoration: none;
+                color: black;
+            }
+            .lastbox{
+                background-color: #F4EDDD;
+                width: 100%;
+                height: 550px;
+            }
+            .innerbox1{
+                /* border: 1px solid red; */
+                color: black;
+                width: 100%;
+                padding: 1% 0;
+            }
+            .innerbox1 h1{
+                margin: 2% 45.3% 0px;
+            }
+            .innerbox1 p{
+                margin: -3px 47% 0;
+                font-size: 9px;
+            }
+            .innerbox1 h6{
+                margin: 19px 46.6%;
+            }
+            .boxes{
+                /* border: 1px solid red; */
+                width: 860px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+            }
+            .box1{
+                height: 330px;
+                width: 270px;
+                /* border: 1px solid green; */
+            }
+            .limgbox{
+                width: 100%;
+                height: 50%;
+            }
+            .limgbox img{
+                width: 100%;
+                height: 100%;
+            }
+            .textbox{
+                background-color: white;
+                height: 35%;
+                width: 79%;
+                padding: 24px 28px;
+            }
+            .textbox h5{
+                margin: 15px 70px;
+            }
+            .textbox p{
+                text-align: center;
+                font-size: 15px;
+            }
+            .footer{
+                height: 414px;
+                width: 94%;
+                background-color: #E4E4E4;
+                padding: 3%;
+            }
+            .details{
+                height: 250px;
+                width: 894px;
+                /* border: 1px solid black; */
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                width: 960px;
+                height: 25px;
+                border: 1px solid black;
+                margin: -50px auto;
+            }
+            .first{
+                height: 190px;
+                width: 150px;
+                /* border: 1px solid black; */
+            }
+            .first li {
+                list-style-type: none;
+                margin: 12px -37px;
+            }
+            .first h6{
+                margin: 2px 2px;
+            }
+            .first li a {
+                text-decoration: none;
+                color: black;
+                font-size: 13px;
+            } 
+            .second{
+                /* border: 1px solid black; */
+                width: 226px;
+                height: 214px;
+            }
+            .second li {
+                list-style-type: none;
+                margin: 11px -35px;
+                font-size: 12px;
+            }
+            .second h6 {
+                margin: 2px 5px
+            }
+            .second li a {
+                text-decoration: none;
+                color: black;
+            }
+            .third{
+                /* border: 1px solid black; */
+                width: 226px;
+                height: 214px;
+            }
+            .third h6 {
+                margin: 2px 5px
+            }
+            .third li {
+                list-style-type: none;
+                margin: 17px -35px;
+                font-size: 12px;
+            }
+            .third li a {
+                text-decoration: none;
+                color: black;
+            }
+            .forth{
+                height: 230px;
+                width: 228px;
+                /* border: 1px solid black; */
+            }
+            .forth p:nth-child(1){
+                margin: 1px 6px 21px;
+                font-size: 13px;
+                font-weight: 600;
+            }
+            .forth p:nth-child(2){
+                font-size: 13px;
+                margin: 20px 5px;
+                line-height: 16px;
+            }
+            .forth a{
+                margin-left: 5px;
+                font-size: 11px;
+                color: black;
+                text-decoration: none;
+            }
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="rightbox">
+            <ul>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Favorite</a></li>
+                <li><a href="#">Shopping bag</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="data:image/png;base64,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"
+                alt="H&M">
+        </div>
+        <div class="navigate">
+            <ul>
+                <li><a href="#">Ladies</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Divided</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Sustainablity</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <a href="#"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///9qbnxmanljZ3ZgZHRma3nt7e9eYnLm5+nq6uxxdYLy8vNscH5kaXf7+/t3eod9gIza296Ii5a7vcPNztKjpa2usLfU1dmChZDf3+LGx8yMj5mbnqa2uL729ve6u8Goq7KfoamTlp//HAzZAAALBUlEQVR4nO1d2WKqMBCVLARBAUFRUSny/x95sTWT4HIrIVttz7OGTDLLmck2m2lEmuzX5WnTFfkVRbepynoVpqnOzzhBM19XXUYZIRgjSoMrKKUYY8JIfGjrfeK6l6poVqdDjEkvWfAUiC4xWRTtOnTd29GIyqKfJoqeCyfLiQnKq5XrPo9AVMUM/2fmHoFihs7bxnXXX8G8yhl+be7u5pItznvX/f8O6wKNnb2hkDj/8HgikxMiU8T7BMXkHLmW5DGiI8HP54YihC8RglwCRw/0HxeLWOGh24mOT4wP9ZPCcFYcL0G+3Pao67Jqz12O2NNQgkixdS3REEn3UL6LcNmx3CYPuUvarOrNrhfzkZQU7zxyOk3F7uWjl1B+Wn3Py/b1McYPpKSsm1vo/CuoF3f214u3a1evO8Xo44DI3SghXPlAXKOC3PZsyfLTaHeY1N09TcCZe3Osbg0Q4WCj6O2bMruNNpR0bsNjlJFb+XbrKZq17+iNyiO01tbd8Shv1AqR4+RAFla3Zk3OrqwxvbFApMn5NSc8lBFnbkjOfjGwQIQ7bUleWuHlUDdqXU2PQDlwCj0J0Rqgw+PQANhRZ+sv4cwGehRrdwf73cAG8M5usSMtZEtBbGPCFwz9GIptGmOYyWaCc0MMMjnI00iJvegfBfLgko25L5VI9mbMlr/ZywLSwOjIzneyOWA7Iq5k8zDvADayprLS8NcuWMlfNKmhHLWcJbMP49/b29ea/UIS0Xjsl50MsuXcwli2C7NEPJQ0hiJrASrNJc1hJkVMpcGkscUaQ3qQRCQGR7YQgX6Z22VRR+Hg6MLYp89iIPHOds4mRQ2UG/p4Kb6x3Jn5xP8gj29n5AtSnEC5i+JJJzpATITFVEQlFDupDqU7QVKJgbJ/Ac0j7GhdOs2gD3ShfZAlI8TOlk2SGETUboqRpCAuaibmu5GDEeJWb8vjsBbFE6J1d0MFOkodxInHPUE6ezIHP430W/hICI+nU08PolXnKyUJqGmgj73VoBnYQsb7HdaiN7qKqA0Ut1GuqclJOILNME1Fvkp7i9OQCnKlZ8QbcND4rKXByRAhQ082fAQ3s/BhzfmCDswm1tAlESmIy6XKAeaCf2goL0Ja5jrWywDXQLPJkziHwoWJhEUV6QJ6NXkSxRSayasVASEaxRNbSiC8Ml+273wh46Y41TtUfk6hxGymEnBBSH3bEQn5HJlEQ4S6ezaFfde4dqFJ7LTgA+WucvEMTQxEZEKKMfeLcg8BLmLKCpiWRkwh0eFrwJqRvo7pA+Tl6oEsglHyIPG9x5Z3D59UmwAl9SMvvAOnbjRTbYHzBuqhn7lAzIBiYXHOJmuBWexBTRXpd8mHyDs+c0UKSlaoNVB4rqSzWQvZuVIVFwo+uNLdM11YgZYpUa6Jf7eBhntTtcWUE5fQeSH/OQ6TDJFTBlUztgFIMFTYd8MXXLH5rWTKiHhAU0kS5/6bYQ8I2QoREcoEzJc68CPwzQtIoRzPKZE66bMB3kuVDKqj6qNjD6IgNf6/PDfUUTc3B3A148l3Co7G+arv/5Ai5W4mMDh+X1sBqja6zgLbubHPrlQstI0nz2vupLx2pbPZhjOv0VVTnhz6zNkuOCmHi2qpOjZ2wcPF+DWo89WCl16W2QSEvxj7Tx7wl96mv18Q3HvsP4sfEfDlBGFsFpvzyfewni8jhJA/ltRwCf3ZgPEYYaAqIV+78pu09dyLl2pGlzx/jITxu0vYvL2E6lr6UzyNkPBtfSlVlXD3UyI+xMOxeSyvB/u6ssYB69SjWRvfVer2eMX3WClL2E4oRNoEFNsWY/8JmaV3m6GGgEx99CJnrfxPu2iVZwK2cnizufsxjtznt2P/CdsUmL+rhxfwQ0Ljo1oKPsrPvTRXpMAuxzMTWD70OgUWhevx+0UOPyIggrsg490FOCmvC6blhDVAWCJn+vulD7wkqFLWFYTP0x1Rn7j2UWnPDyTPPrsacDRKiTqPNNN2ipsFsFKqsgYIrmbqqRSDgJUnJW4J44P9NcRsUgaU8OzZ3zQfLiBQrLXwBWR60NwxbYAdsFRtkzBsMka+LuVP3QG7AlfsabyAVRnlHbBwYsZTNYVTWUx1690Gjmz4qaZwKitQbUEc2fByAyYk6ctWtYlm+pENkxDHLdT3h274MWcvE32uolMO5e99PSN7geBcUzZTiMNr/j1XBDd/Tbq/Efbr+3fmQujXpCJEI+4s8q2o2Gk6rg7Xfvi2BrXXdeUAbDkKqJ6e6QIcIJ0cq8Vpbq8mUYw8nmo+4mJkrzKMncZjZ2ISPdqlKG7D0nDf11bc1eZPNSPXenIQFMKf6veHuKZSh+nsxb1TnmTCIaiVJiICsTWgfoR9cbGgcmI4xFz/JXeTUINSaSuviAPFPuyQCoVKabubC06Fa7LsaRC1C6wvaxXhx70/PZm5plK63tNxGgUlzgBp3SXSCDU1enH/t0jEnd5M785XoadB4PJaM3Glt3YSKe58p5m7qCiuLkXTrxO8gfTwg9YrikdBej1Aox/l2EutOwr8J+mqaxMrfqXUfmug/W9RS2NspropjMBJzFiLz2u40/Mh0lyKGdZrGtJt7IiacueJ9MwMszyLkoABNncGJJKioo3HrARqoaJm09TBSFpcNz1JQ4tao5+S/FmAd7ZC/0Z+ThLFZvMbKWYEy9zOeo30EtKniJnZz0phN6CxhXXFZPBe5lewMDuLlTSi1PxzfSt6/yi5aUX9kJWGHM0a44ncyWdBxFo2fJwZvGUpHLxEKr3YadoWayZ9jJpbPV3TwTOkG+mNZdO2OHh0sZ9GIw4nPAyCBK4HDyEic+/LfWKeyQ6Osla/NQ6fA6b0QtXmg+cJzYrYDCwkwLFmKrW9edL5+vh4aFFR+6ghGwnS6nF6DzN41px0PF0KF/ZmcbYNBr2gbKeJ80dHNmgZyXt4ZVs0+NbjF4avSl/e5y40yLg/Dufv1pHNxeNrxoPGhaUOO0NJPpHkrAs8bBKx801CHyKLtjib5zekkWK8UY4dYbUgNxwNL+7VQrZF0+ymRzm0xs9Rz0uFMkNSH9gdx8YP36WXg4YFEcOO3XLjfiJ3p1Gr/vP6QG+nr3ehz96lny9s2mJP/7N7eowwjo/rl77dbNsM4VtN6BWUPo+xIbVpiz3qxYMeIkoY6spt8rT0lzb7+hwzgu8TpF6+/9JdmwTuq68f8cM0p59LwrLDuaq3URQmzRfCebSqT5suIwSj+6G5yBe03/TaJoG7ylje+UExmb3OEoZRfAVa9vPWy/bk9wEm1fddDgPLitqjzp/JOAaULE4v8XjLQeMLqy54ZFOvo5/s4uUlWKsETny1zNkDr/OifCyuxgQZuwROIKpiBSEpZmizGrniYpfAyYhOO0qWL0tJEUFZq5J9WQ8aEpLtZhcw/KAWOADqwwnKj7WqitkPGgMkq9Mxx5+R4U5QSpd9BCFZV20nGZBtAvcAabQu2y7rqYuMIDu0H+u9hvJOGEizaNUW75Am0RWh1rqVm6BhFYNkyo2imoYLAmcZTgicXVjO+l3AFYGzCHcEzhpcEjhLcEzgbCAcELj3FDF4/1n8DQTu/YOG7VKxffwRuHeAB1m/afwRuHfALyNw76qo7x80/gjcO+AvaLwDfkHQ+A0Ezp9lG1P4FUHjb9nm5+MXELjfEDT+CNwb4I/AvQN+27KNoSsLHEO2Rb/fllGGbIseP/gwBVLQ8OyyUm0QBM7L+7t1gLMb4tVtrFoxjy8nj4jzS9kMomljmn2ks38mdXi4ByDtBAAAAABJRU5ErkJggg=="
+                        alt=""></a>
+            <input type="text" placeholder="Search Products">
+        </div>
+    </div>
+    <div class="box">
+        <ul>
+            <li><a href="#">Become a member to get 100 bonus points</a></li>
+            <li><a href="#">Be a fashion recycler! Click to learn more.</a></li>
+            <li><a href="#">Download the H&M App</a></li>
+        </ul>
+    </div>
+    <div class="imgbox1">
+        <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/kids_s04/august_2021/4044e/4044E-CPD-3x2-online-deal-for-baby.jpg]&scale=size[960]&sink=format[jpeg],quality[80]" alt="">
+        <div class="inimgbox11">
+            <p>Online Deal</p>
+            <h1>Sweet finds form Rs.499 </h1>
+            <p>Valid on selected items at hm.com until 29/09/21 or while stock lasts</p>
+            <button><a href="#">SHOP NOW</a></button>
+        </div>
+    </div>
+    <div class="midbox">
+        <h1 class="midtext">Trending right now</h1>
+
+    </div>
+    <div class="imgbox2">
+        <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/ladies_s04/august_2021/1434/1434-3x2-athleisure-always.jpg]&scale=size[960]&sink=format[jpeg],quality[80]" alt="">
+        <div class="inbox1">
+            <h1>Athleisure, always</h1>
+            <p>Because being comfy while looking totally sharp is our forever mood</p>
+            <button><a href="#">SHOP NOW</a></button>
+        </div>
+        <div class="price">
+            <p id="name">Knitted zip-up collar</p>
+            <p id="price">Rs. 1,499</p>
+        </div>
+    </div>
+    <div class="imgbox3">
+        <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/men_s04/augusti-2021/3053h/3053h-the-relaxed-jeans-3x2-teaser.jpg]&scale=size[960]&sink=format[jpeg],quality[80]" alt="">
+        <div class="inbox2">
+            <h1>September: The relaxed jeans</h1>
+            <h3>A fresh take on a '90s classic</h3>
+            <button><a href="#">SHOP NOW</a></button>
+        </div>
+    </div>
+    <div class="imgbox4">
+        <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/divided_s04/august_2021/5074b/5074B-3x2-athleisure-is-the-new-normal.jpg]&scale=size[960]&sink=format[jpeg],quality[80]" alt="">
+        <div class="inprice">
+            <h2>Ribbed sleeveless top</h2>
+            <h2>RS. 699</h2>
+        </div>
+        <div class="innerbox">
+            <h1>Current crush by @alvssa_</h1>
+            <p>Comfortable has never looked this good</p>
+            <button><a href="#">SHOP NOW</a></button>
+        </div>
+    </div>
+    <div class="lastbox">
+        <div class="innerbox1">
+            <h1>MAGAZINE</h1>
+            <p>A WORLD OF INSPIRATION</p>
+            <h6>READ H&M MAGAZINE</h6>
+        </div>
+        <div class="boxes">
+            <div class="box1">
+                <div class="limgbox">
+                    <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/ladies_s04/magazine-2021-s04/2005-Bird-3x2-Magazine-1.jpg]&scale=size[1200]&sink=format[jpeg],quality[80]" alt="">
+                </div>
+                <div class="textbox">
+                    <h5>Inside H&M</h5>
+                    <p>Coming this spring: Iris Apfel x H&M</p>
+                    <p>Read the Story &rarr;</p>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="limgbox">
+                    <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/ladies_s04/magazine-2021-s04/5014-denim-image-4.jpg]&scale=size[1200]&sink=format[jpeg],quality[80]" alt="">
+                </div>
+                <div class="textbox">
+                    <h5>Inside H&M</h5>
+                    <p>The recycled denim collection</p>
+                    <p>Read the Story &rarr;</p>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="limgbox">
+                    <img src="https://lp2.hm.com/hmgoepprod?set=width[1280],quality[80],options[limit]&source=url[https://www2.hm.com/content/dam/ladies_s04/magazine-2021-s04/WIRED-Magazine-Campaign-Image-1-v2WIRED-Magazine-Campaign-Image-1.jpg]&scale=width[global.width],height[15000],options[global.options]&sink=format[jpg],quality[global.quality]" alt="">
+                </div>
+                <div class="textbox">
+                    <h5>Inside H&M</h5>
+                    <p>WIRED x H&M | Investigating the machine reinventing recycling</p>
+                    <p>Read the Story &rarr;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="details">
+            <div class="first">
+                <h6>SHOP</h6>
+                <ul>
+                    <li><a href="#">Ladies</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </div>
+            <div class="second">
+                <h6>CORPORATE INFO</h6>
+                <ul>
+                    <li>Career at H&M</li>
+                    <li>About H&M Group</li>
+                    <li>Sustainability</li>
+                    <li>Press</li>
+                    <li>Invester relations</li>
+                    <li>Corporate goverance</li>
+                </ul>
+            </div>
+            <div class="third">
+                <h6>HELP</h6>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>       
+                    <li><a href="#">My H&M</a></li>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Legal & Privacy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="forth">
+                <p>Signup and newslater</p>
+                <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!</p>
+                <a href="#">SIGN UP &rarr;</a>
+            </div>
+        </div>
+        <div class="icons"></div>
+    </div>
+</body>
+</html>
