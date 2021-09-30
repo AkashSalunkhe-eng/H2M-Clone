@@ -398,7 +398,11 @@
         password: password,
         Date_of_birth: DOB,
       };
-      window.location.href = "signin.html";
+      if (email != "" && password != "" && DOB != "") {
+        window.location.href = "signin.html";
+      } else {
+        alert("PLEASE ADD  Email,password,Date-of-birth");
+      }
       let arr = JSON.parse(localStorage.getItem("normaldetails"));
       //push new user to array
       arr.push(norm_data); // added a new user
