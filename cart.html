@@ -99,7 +99,9 @@
     #top1 ul li{
       list-style-type: none;
     }
-
+#succ{
+    text-align:center;
+}
 
     
 
@@ -177,6 +179,7 @@
           <input id="coupon" text="code" style="width:180px;height:35px"/>
           <button onclick="add()">ADD</button>
           </div>
+         <div id="succ"></div>
           <div id="c2">
           <p>Log in to use your personal offers!</p>
           <button onclick="add()">Login</button>
@@ -1253,9 +1256,37 @@ var e=148 + c;
 
 document.getElementById("total").textContent="Rs."+ e;///////////////////////////////////////////////////////////////////////////
 
+
+
+
 function add(){
-  var a = document.getElementById("coupon");
+var div =document.getElementById("succ");
+div.style.width = "300px";
+
+
+
+
+
+var b = "ABCDEFGHIJ";
+var a = document.getElementById("coupon").value;
+var m = document.createElement("p");
+var n = document.createElement("p");
+if(a==b){
+  alert("CouponCode Applied Successfully")
+m.textContent = "Coupon code applied!";
+m.style.color = "green";
+div.append(m);
+}else{
+  alert("Invalid Code")
+n.textContent = "Invalid coupon Code!";
+n.style.color = "red";
+
+div.append(n);
+
+}
+
   
+
 }
 
 
