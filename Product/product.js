@@ -30,19 +30,51 @@ function showProduct(data) {
     });
 
     let anchor = document.createElement("p");
+    anchor.setAttribute("class", "product_item_title");
     anchor.addEventListener("click", function () {
       //console.log(item.id);
-      items(item.id);
+      console.log(item.id);
+      localStorage.setItem("sibleProduct", JSON.stringify(item.id));
       window.location.assign("./card.html");
-      // window.location.assign("https://www.flipkart.com/");
     });
     anchor.textContent = item.title;
 
     let p = document.createElement("p");
     p.textContent = `Price ${item.price}`;
 
-    divison.append(img, anchor, p);
+    let newarrival = document.createElement("newarrival");
+    newarrival.setAttribute("class", "newarrival");
+    newarrival.textContent = ` ${item.fashionChoice}`;
+
+    divison.append(img, anchor, p, newarrival);
 
     div.append(divison);
   });
+}
+
+async function handleSorting() {
+  let val = document.getElementById("sortings").value;
+  div.innerHTML = null;
+  let response = await fetch("./product.json");
+
+  let allproducts = await response.json();
+
+  console.log(allproducts);
+
+  let data = allproducts.clothing;
+
+  if (val == "low") {
+    data.sort(function (a, b) {
+      return a.price - b.price;
+    });
+    showProduct(data);
+  } else if (val == "high") {
+    data.sort(function (a, b) {
+      return b.price - a.price;
+    });
+
+    showProduct(data);
+  } else {
+    showProduct(data);
+  }
 }

@@ -14,33 +14,66 @@
   </head>
 
   <body>
-    <div id="nav">
-      <div class="rightbox">
-        <ul>
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">Favorite</a></li>
-          <li><a href="#">Shopping bag</a></li>
-        </ul>
-      </div>
-      <div class="logo">
-        <img src="img/logo.svg" alt="" />
-      </div>
-      <div class="navigate">
-        <ul>
-          <li><a href="#">Ladies</a></li>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Baby</a></li>
-          <li><a href="#">Kids</a></li>
-          <li><a href="#">Divided</a></li>
-          <li><a href="#">Sale</a></li>
-          <li><a href="#">Sustainablity</a></li>
-        </ul>
-      </div>
-      <div class="search">
-        <a href="#"><img src="img/seachlogo.png" alt="" /></a>
-        <input type="text" placeholder="Search Products" />
-      </div>
+    <div class="heading">
+      <h1>VIEW ALL</h1>
     </div>
+
+    <!-- Filter  -->
+    <div class="filter">
+      <select id="sortings" onchange="handleSorting()">
+        <option value="">SORT BY</option>
+        <option value="high">Recommended</option>
+        <option value="low">Newest</option>
+        <option value="low">Lowest Price</option>
+        <option value="high">Highest Price</option>
+      </select>
+
+      <!-- Conscious -->
+      <select id="sortings" onchange="handleSorting()">
+        <option value="">Conscious</option>
+        <option value="high">Conscious</option>
+      </select>
+
+      <!-- Size -->
+
+      <select id="sortings" onchange="handleSorting()">
+        <option value="">Size</option>
+        <option value="high">Womenswear</option>
+        <option value="high">Bras</option>
+        <option value="high">Footwear</option>
+      </select>
+
+      <!-- Colour -->
+
+      <select id="sortings" onchange="handleSorting()">
+        <option value="">COLOUR</option>
+        <option value="high">Black</option>
+        <option value="high">Blues</option>
+        <option value="high">Red</option>
+        <option value="high">Beige</option>
+        <option value="high">Yellow</option>
+        <option value="high">Purple</option>
+        <option value="high">Grey</option>
+      </select>
+
+      <select id="sortings" onchange="handleSorting()">
+        <option value="">PATTERN</option>
+        <option value="high">argly-Patterned</option>
+        <option value="high">block coloured</option>
+        <option value="#">Checked</option>
+        <option value="#">floral</option>
+        <option value="#">leopard-paint</option>
+        <option value="#">paisely-patterned</option>
+        <option value="#">patterned</option>
+        <option value="#">solid colour</option>
+        <option value="#">spotted                   1</option>
+        <option value="#">stripped</option>
+      </select>
+    </div>
+
+    <!-- Left side menu list -->
+
+    <!-- New Arrivals -->
 
     <div class="leftside">
       <div class="newArrival">
@@ -53,6 +86,8 @@
         </ul>
       </div>
 
+      <!-- Trending Now -->
+
       <div class="newArrival">
         <h4><a href="#">Trending Now</a></h4>
         <ul>
@@ -64,12 +99,16 @@
         </ul>
       </div>
 
+      <!-- Deals -->
+
       <div class="newArrival">
         <h4><a href="#">Deals</a></h4>
         <ul>
           <li><a href="">Socks - Buy 2 get 1 free!</a></li>
         </ul>
       </div>
+
+      <!-- Shop by Product -->
 
       <div class="newArrival">
         <h4><a href="#">Shop by Product</a></h4>
@@ -103,34 +142,42 @@
           <li><a href="">Premium Selection</a></li>
         </ul>
       </div>
-      <!-- 
-      <div class="newArrival">
-        <h4><a href="#">Deals</a></h4>
-        <ul>
-          <li><a href="">Socks - Buy 2 get 1 free!</a></li>
-        </ul>
-      </div> -->
 
-      <!-- <ul>
-            <ul>
-                <a href="#" style="font-weight: 700;"> New Arrival</a>
-            </ul>
-            <ul> <a href="#">View All</a></ul>
-            <ul>   <a href="#">Clothes</a> </ul>
-            <ul> <a href="#">Shoes & Accessories</a></ul>
-            <ul> <a href="#">Lingerie</a> </ul>
-            <br>
-            <ul><a href="#" style="font-weight: 700;">Trending Now</a></ul>
-            <ul><a href="#">Shirts you need now</a></ul>
-            <ul><a href="#">Feel Good Lingerie</a></ul>
-            <ul><a href="#">Sleeveless knits and outdoor</a></ul>
-            <ul><a href="#">Y2K fashion</a></ul>
-            <ul><a href="#">Music, Movies & Logos</a></ul>
-        </ul> -->
+      <!-- Sustainability -->
+
+      <div class="newArrival">
+        <h4><a href="#">Sustainability</a></h4>
+        <ul>
+          <li><a href="">Our products</a></li>
+          <li><a href="">H&M Take Care</a></li>
+          <li><a href="">Learn More</a></li>
+        </ul>
+      </div>
+
+      <!-- Magazine -->
+
+      <div class="newArrival">
+        <h4><a href="#">Magazine</a></h4>
+        <ul>
+          <li><a href="">Magazine</a></li>
+        </ul>
+      </div>
+
+      <!-- Shop by Occasion -->
+
+      <div class="newArrival">
+        <h4><a href="#">Shop by Occasion</a></h4>
+        <ul>
+          <li><a href="">Party Wear</a></li>
+          <li><a href="">Casual Wear</a></li>
+          <li><a href="">Office Wear</a></li>
+          <li><a href="">Loungewear</a></li>
+        </ul>
+      </div>
     </div>
 
     <div id="display"></div>
 
-    <script src="./test.js"></script>
+    <script src="./product.js"></script>
   </body>
 </html>

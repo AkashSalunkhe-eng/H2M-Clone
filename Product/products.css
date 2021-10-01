@@ -6,18 +6,18 @@ body {
   font-weight: 400;
   background-color: #faf9f8;
 }
+/* 
 #nav {
-  /* border: 1px solid red; */
   width: 100%;
   height: 151px;
 }
 
 .rightbox {
-  /* border: 1px solid red; */
+  
   width: 17%;
   height: 22%;
   margin-left: 85%;
-  position: relative;
+  /* position: relative; 
   top: 11%;
   right: 3%;
 }
@@ -38,7 +38,7 @@ body {
 .logo {
   height: 25%;
   width: 3%;
-  /* border: 1px solid red; */
+  /* border: 1px solid red; 
   margin: 0 auto;
 }
 .logo img {
@@ -48,7 +48,7 @@ body {
 .navigate {
   height: 41%;
   width: 50%;
-  /* border: 1px solid red; */
+  /* border: 1px solid red; 
   margin: 0% auto;
 }
 
@@ -93,6 +93,8 @@ body {
   border: 0px;
   background-color: whitesmoke;
 }
+ */
+
 .box {
   /* border: 1px solid red; */
   width: 52%;
@@ -195,13 +197,13 @@ body {
 .inbox1 p {
   margin: 9px 12px 13px 12px;
 }
-.price {
+/* .price {
   position: relative;
   width: 177px;
   bottom: 168px;
   left: 48px;
   font-size: 19px;
-}
+} */
 #name {
   color: rgba(255, 255, 255);
   margin: 2px 8px;
@@ -316,6 +318,23 @@ body {
   width: 100%;
   height: 50%;
 }
+.heading {
+  margin-left: 20%;
+}
+
+.heading,
+h1 {
+  font-size: 40px;
+}
+.filter {
+  font-weight: 400;
+  font-family: "HM Sans Regular", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック",
+    "MS PGothic", sans-serif;
+  margin-left: 20%;
+  gap: 3px;
+}
+
 #display {
   width: 80%;
   height: auto;
@@ -339,6 +358,15 @@ body {
 .productImage {
   width: 300px;
   height: 500px;
+}
+.product_item_title {
+  cursor: pointer;
+}
+.newarrival {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: start;
 }
 h4 a:link {
   color: black;
@@ -392,4 +420,19 @@ a:hover {
   color: #e5002e;
   background-color: transparent;
   text-decoration: none;
+}
+
+#sortings {
+  border: none;
+  outline: none;
+  background-color: #faf9f8;
+  width: 150px;
+  height: 40px;
+}
+.filter,
+select,
+option:hover {
+  hover: red;
+  font-size: 15px;
+  font-weight: 400;
 }
