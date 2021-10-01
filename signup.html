@@ -2,7 +2,21 @@
 <html lang="en">
   <head>
     <title>Signup</title>
+    <link
+      href="https://s1-cdn.hm.com/global/fonts/4.0.12/hm/css/fonts_en_in.css"
+    />
+    <link rel="icon" href="/Product/img/favicon.ico" type="image/png" />
     <style>
+      body {
+        @font-face {
+          background-color: #faf9f8;
+          font-family: "HM Sans Regular", "ヒラギノ角ゴ Pro W3",
+            "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo,
+            "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+          font-weight: 400;
+          background-color: #faf9f8;
+        }
+      }
       #block {
         width: 39%;
         height: 80px;
@@ -65,6 +79,12 @@
         padding: 10px;
         cursor: pointer;
         margin-bottom: 0px;
+        float: left;
+      }
+      #plus {
+        float: right;
+        margin-top: -40px;
+        margin-right: 10px;
       }
       #text {
         margin-top: 10px;
@@ -81,12 +101,13 @@
         height: 0px;
         margin-left: 50px;
         background-color: rgb(250, 249, 248);
+        align-items: center;
       }
       #para1 {
         margin-left: 50px;
         width: 70%;
         float: left;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
       }
       #name {
         margin-left: 10px;
@@ -96,6 +117,7 @@
         margin-left: 35px;
         margin-top: 20px;
         cursor: pointer;
+        height: 20px;
       }
       #check {
         margin-top: 0px;
@@ -186,14 +208,14 @@
         >
       </form>
       <div id="dropdown">
-        <h3 id="text">
-          ADD MORE & GET MORE
+        <h3 id="text">ADD MORE & GET MORE</h3>
+        <div id="plus">
           <img
             onclick="dropdown()"
             id="plus_img"
             src="https://cdn-icons-png.flaticon.com/512/747/747361.png"
           />
-        </h3>
+        </div>
       </div>
       <div id="drop"></div>
       <div id="check">
@@ -232,12 +254,14 @@
         </button>
       </div>
       <div id="anch">
-        <a href=""><p id="anc">Back to sign in</p></a>
+        <a href="signin.html"><p id="anc">Back to sign in</p></a>
       </div>
     </div>
   </body>
   <script>
     function dropdown() {
+      var plus = document.getElementById("plus");
+      plus.innerHTML = null;
       var parent = document.getElementById("parent");
       parent.style.height = "1500px";
       var plus = document.getElementById("plus_img");
@@ -245,7 +269,7 @@
       text.style.color = "red";
       var div = document.getElementById("drop");
       div.style.backgroundColor = "white";
-      div.style.height = "500px";
+      div.style.height = "600px";
 
       var para = document.createElement("p");
       para.id = "para1";
@@ -331,6 +355,17 @@
 
       var parent = document.getElementById("parent");
       parent.style.height = "1000px";
+
+      var plus = document.getElementById("plus");
+
+      var img = document.createElement("img");
+      img.src = "https://cdn-icons-png.flaticon.com/512/747/747361.png";
+      img.id = "plus_img";
+      img.onclick = function () {
+        dropdown();
+      };
+
+      plus.append(img);
     }
 
     function fade() {
@@ -363,7 +398,11 @@
         password: password,
         Date_of_birth: DOB,
       };
-      window.location.href = "signin.html";
+      if (email != "" && password != "" && DOB != "") {
+        window.location.href = "signin.html";
+      } else {
+        alert("PLEASE ADD  Email,password,Date-of-birth");
+      }
       let arr = JSON.parse(localStorage.getItem("normaldetails"));
       //push new user to array
       arr.push(norm_data); // added a new user
