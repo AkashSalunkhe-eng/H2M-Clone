@@ -40,13 +40,22 @@ function showProduct(data) {
     anchor.textContent = item.title;
 
     let p = document.createElement("p");
-    p.textContent = `Price ${item.price}`;
+    let pr = Math.ceil(+item.price * 70);
+    p.innerHTML = `Rs. ${pr}`;
 
     let newarrival = document.createElement("newarrival");
     newarrival.setAttribute("class", "newarrival");
     newarrival.textContent = ` ${item.fashionChoice}`;
 
-    divison.append(img, anchor, p, newarrival);
+    let color_div = document.createElement("div");
+    color_div.setAttribute("class", "color_pallet");
+    let pallet = item.swatches;
+    pallet.forEach(function (color) {
+      let div = document.createElement("div");
+      div.style.background = color.colorCode;
+      color_div.append(div);
+    });
+    divison.append(img, anchor, p, color_div, newarrival);
 
     div.append(divison);
   });

@@ -362,6 +362,23 @@ h1 {
 .product_item_title {
   cursor: pointer;
 }
+.product_item_title:hover {
+  text-decoration: underline;
+}
+.color_pallet {
+  width: 100px;
+  height: 20px;
+  display: grid;
+  grid-template: "div div div div div div div div div";
+  gap: 5px;
+  place-items: center;
+}
+.color_pallet > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
 .newarrival {
   font-size: 12px;
   line-height: 20px;
