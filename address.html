@@ -23,7 +23,7 @@
       }
       .blck1 {
         width: 80%;
-        height: 100px;
+        height: 130px;
         margin: auto;
       }
       .s_blck1 {
@@ -52,18 +52,26 @@
       }
       #can {
         width: 80%;
-        margin-left: 50px;
+        margin-left: 71px;
         height: 40px;
         background-color: white;
         color: black;
       }
       #save {
         width: 80%;
-        margin-left: 50px;
+        margin-left: 71px;
         margin-top: 10px;
         height: 40px;
         background-color: black;
         color: white;
+      }
+      #p1{
+        margin-top: 0px;
+        color: red;
+      }
+      #p2{
+        margin-top: 0px;
+        color: red;
       }
     </style>
   </head>
@@ -72,38 +80,38 @@
     <div id="parent">
       <h3 id="heading">EDIT ADDRESS</h3>
       <div class="blck1">
-        <div class="s_blck1">
+        <div class="s_blck1" id="s_b1">
           <label class="lab">First Name<mark class="star">*</mark></label
           ><br />
-          <input type="text" id="f_name" class="inp" />
+          <input type="text" id="f_name" class="inp" placeholder="First Name" onmouseenter="showname()" />
         </div>
-        <div class="s_blck2">
+        <div class="s_blck2" id="s_b2">
           <label class="lab">Last Name<mark class="star">*</mark></label
           ><br />
-          <input type="text" id="l_name" class="inp" />
+          <input type="text" id="l_name" class="inp" placeholder="Last Name" onmouseenter="showlname()" >
         </div>
       </div>
       <div class="blck1">
         <div class="s_blck1">
           <label class="lab">Address line 1<mark class="star">*</mark></label
           ><br />
-          <input type="text" id="Add1" class="inp" />
+          <input type="text" id="Add1" class="inp" placeholder="Permanent Address"/>
         </div>
         <div class="s_blck2">
           <label class="lab">Address line 2</label><br />
-          <input type="text" id="Add2" class="inp" />
+          <input type="text" id="Add2" class="inp" placeholder="optional"/>
         </div>
       </div>
       <div class="blck1">
         <div class="s_blck1">
           <label class="lab">Pin code<mark class="star">*</mark></label
           ><br />
-          <input type="text" id="Pin" class="inp" />
+          <input type="text" id="Pin" class="inp" placeholder="Area Pin Code"/>
         </div>
         <div class="s_blck2">
           <label class="lab">City of district<mark class="star">*</mark></label
           ><br />
-          <input type="text" id="City" class="inp" />
+          <input type="text" id="City" class="inp" placeholder="Enter City" />
         </div>
       </div>
       <div class="blck1">
@@ -161,6 +169,31 @@
     </div>
   </body>
   <script>
+   var count = 0;
+    function showname() {
+      var div = document.getElementById("s_b1");
+      var p = document.createElement("p");
+      p.innerText="Enter a valid First name";
+      p.id="p1"
+      div.append(p)
+      count++;
+      if(count > 1){
+      div.removeChild(p)
+    }
+    }
+   
+    var count1 = 0;
+    function showlname() {
+      var div = document.getElementById("s_b2");
+      var p = document.createElement("p");
+      p.innerText="Enter a valid Last name";
+      p.id="p2"
+      div.append(p)
+      count1++;
+      if(count1 > 1){
+      div.removeChild(p)
+    }
+    }
     if (localStorage.getItem("userAddress") === null) {
       localStorage.setItem("userAddress", JSON.stringify([]));
     }
@@ -204,11 +237,11 @@
       arr = JSON.stringify(arr);
       localStorage.setItem("userAddress", arr);
 
-      window.location.href = ""; //put href of after this page
+      window.location.href = "./payment.html"; //put href of before this page
     }
-
+    
     function cancel() {
-      window.location.href = ""; //put href of before this page
+      window.location.href = "./cart.html"; //put href of after this page
     }
   </script>
 </html>
